@@ -9,30 +9,31 @@
     <title>ToDo List</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="w3-container w3-center">
-        <h1>ToDo List</h1>
-        <form >
-            <input type="text" name="search" placeholder="Search ToDos">
-        </form>
-    </header>
-    <main class="w3-container w3-center">
-        <ul>
-            <li>Insert to Do</li>
+    <div id="main" class="w3-content w3-center w3-container w3-text-white">
+        <header>
+            <h1>ToDo List</h1>
+            <form id="form1" class="">
+                <input class="w3-input w3-border w3-round" type="text" name="searchDo" placeholder="Search ToDos">
+            </form>
+        </header>
+        
+        <ul id="list" class="w3-ul w3-left-align w3-margin-bottom">
+            <li>Play microkart<i class="w3-right fa fa-trash"></i></li>
+            <li>defeat ganon in zelda<i class="w3-right fa fa-trash"></i></li>
+            <li>make a veggie pie<i class="w3-right fa fa-trash"></i></li>
         </ul>
-        <form>
-            <label>Add a new ToDo...</label><br>
-            <input type="text" name="add" placeholder="Insert a new ToDo">
+        <form id ="form2" class="">
+            <label>Add a new todo...</label>
+            <input class="w3-input w3-border w3-margin-top w3-round" type="text" name="addDo">
         </form>
-    </main>
-    <footer class="w3-container w3-center">
-        <p>Created Using W3.CSS</p>
-    </footer>
-
+        <footer>
+            <p>Designed using W3.CSS Framework</p>
+        </footer>
+    </div>
     
-    <script src="script.js">
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
